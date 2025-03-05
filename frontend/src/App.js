@@ -55,7 +55,7 @@ function App() {
         }
     };
 
-    const handleCloseSnackbar = () => {
+    const closeMessage = () => {
         setOpenSnackbar(false);
     };
 
@@ -168,8 +168,8 @@ function App() {
                         </CardContent>
                     </Card>
                 )}
-                <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
-                    <Alert onClose={handleCloseSnackbar} severity="error" sx={{width: '100%'}}>
+                <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={closeMessage}>
+                    <Alert onClose={closeMessage} severity="error" sx={{width: '100%'}}>
                         {errorMessage}
                     </Alert>
                 </Snackbar>
