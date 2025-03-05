@@ -42,3 +42,23 @@ For this code challenge, you are required to setup and create a simple React app
 -   please allocate 2 - 3 hours for this challenge
 -   please add clear instructions on how to run the React app
 -   please note down improvements in your instructions you would like to implement, or a list of things that need to be done to productionise this app
+
+## To run the App
+
+````sh
+# install dependencies
+yarn install
+
+```sh
+#to start the server
+yarn build && node dist/api/index.js
+
+```sh
+# to run the frontend
+cd fronend
+yarn install
+
+```sh
+#to run the front end
+yarn start
+````

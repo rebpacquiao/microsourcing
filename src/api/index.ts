@@ -10,4 +10,8 @@ app.use(cors());
 app.get('/instruct-drone', instructDrone);
 app.get('/get-billboard', getBillboard);
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the Drone API');
+});
+
 app.listen(4001, () => console.log(`Api started at http://localhost:4001`));
